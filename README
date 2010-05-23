@@ -1,0 +1,20 @@
+jslint is a standalone unix command line utility powered by Douglas Crowdford's 
+javascript jslint.js (http://www.jslint.com) & Google's v8 engine. It is a 
+javascript code quality tool (Warning: JSLint will hurt your feelings)
+
+to dowload & build:
+
+    git clone git://github.com/arnaudsj/jslint.git
+    cd jslint
+    git submodule init
+    git submodule update
+    make
+
+to run:
+    bin/jslint pathto/fileofyourchoice.js
+    
+Please file any problems you run into through Github's Issue Tracker if you run 
+into problems at runtime. For any questions or help regarding what JSLint is 
+reporting please join: http://tech.groups.yahoo.com/group/jslint_com/
+
+ 
