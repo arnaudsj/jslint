@@ -1,0 +1,5 @@
+- enable option parsing (either from the file read using jslint comment practice,
+or through a global ~/.jslint file)
+- write tests
+- allow multiple js files to be passed from command line
+- benchmark
