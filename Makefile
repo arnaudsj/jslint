@@ -19,11 +19,11 @@
 # THE SOFTWARE.
 
 all: v8lib jlint2c
-	g++ -m32 -Ilib/v8/include src/jslint.cpp -o bin/jslint lib/v8/libv8.a -lpthread
+	g++ -m64 -Ilib/v8/include src/jslint.cpp -o bin/jslint lib/v8/libv8.a -lpthread
 
 jlint2c:
 	tools/jslint2c.py
 
 v8lib:
-	if test -s lib/v8/libv8.a; then echo "v8 built"; else cd lib/v8; scons mode=release library=static snapshot=on; fi
+	if test -s lib/v8/libv8.a; then echo "v8 built"; else cd lib/v8; scons arch=x64 mode=release library=static snapshot=on; fi
     
