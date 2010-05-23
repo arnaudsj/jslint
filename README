@@ -2,7 +2,18 @@ jslint is a standalone unix command line utility powered by Douglas Crowdford's
 javascript jslint.js (http://www.jslint.com) & Google's v8 engine. It is a 
 javascript code quality tool (Warning: JSLint will hurt your feelings)
 
-to dowload & build:
+It will currently hurt yours feelings even more, as the current jslint settings
+are hard coded to "the good parts", which are best sum up by the following JSON 
+jslint.js config string, you might be already familiar with:
+{white: true, onevar: true, undef: true, nomen: true, eqeqeq: true, 
+plusplus: true, bitwise: true, regexp: true, newcap: true, immed: true, 
+strict: true}
+
+In order to download & build properly jslint you will need to make sure you have
+installed all of Google's v8 dependencies, if you are unsure please visit: 
+http://code.google.com/apis/v8/build.html
+
+to download & build:
 
     git clone git://github.com/arnaudsj/jslint.git
     cd jslint
@@ -17,4 +28,5 @@ Please file any problems you run into through Github's Issue Tracker if you run
 into problems at runtime. For any questions or help regarding what JSLint is 
 reporting please join: http://tech.groups.yahoo.com/group/jslint_com/
 
+Copyright (c) 2010 Sébastien Arnaud
  
